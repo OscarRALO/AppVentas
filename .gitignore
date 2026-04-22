@@ -1,34 +1,25 @@
-HELP.md
-target/
-!.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
+# Compilados y binarios
+/target/
+/build/
+/out/
+*.class
 
+# Entorno y Secretos (Seguridad)
 .env
-### STS ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
+.env.*
+!.env.example
 
-### IntelliJ IDEA ###
-.idea
-*.iws
+# Archivos de IntelliJ IDEA
+.idea/
 *.iml
+*.iws
 *.ipr
+out/
 
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
+# Archivos de Sistema y Log
+*.log
+.DS_Store
+Thumbs.db
 
-### VS Code ###
-.vscode/
+# Otros temporales
+HELP.md
